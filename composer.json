@@ -1,0 +1,21 @@
+{
+    "name": "rixafy/doctrine-traits",
+    "description": "Useful traits for Doctrine ORM",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rick Strafy",
+            "email": "rixafy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ramsey/uuid-doctrine": "dev-master"
+    },
+    "config": {
+        "platform": {
+            "php": "7.1"
+        }
+    }
+}
