@@ -16,7 +16,7 @@ trait UniqueTrait
      */
     protected $id;
 
-    public function getId()
+    public function getId(): ?\Ramsey\Uuid\UuidInterface
     {
         return $this->id;
     }
