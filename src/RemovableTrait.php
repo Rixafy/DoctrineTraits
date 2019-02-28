@@ -10,7 +10,7 @@ trait RemovableTrait
      * @ORM\Column(type="boolean")
      * @var bool
      */
-    private $is_removed = true;
+    private $is_removed = false;
 
     /**
      * @return bool
