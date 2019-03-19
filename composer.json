@@ -13,6 +13,11 @@
     "require": {
         "ramsey/uuid-doctrine": "dev-master"
     },
+    "autoload": {
+        "psr-4": {
+            "Rixafy\\DoctrineTraits\\": "src"
+        }
+    },
     "config": {
         "platform": {
             "php": "7.1"
