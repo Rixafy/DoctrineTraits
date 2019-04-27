@@ -12,19 +12,23 @@ trait ActiveTrait
      */
     private $is_active = true;
 
-    /**
-     * @return bool
-     */
     public function isActive(): bool
     {
         return $this->is_active;
     }
 
-    /**
-     * @param bool $is_active
-     */
     public function setIsActive(bool $is_active): void
     {
         $this->is_active = $is_active;
     }
+
+    public function disable(): void
+	{
+		$this->is_active = false;
+	}
+
+    public function enable(): void
+	{
+		$this->is_active = true;
+	}
 }
