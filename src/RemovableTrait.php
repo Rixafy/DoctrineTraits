@@ -12,9 +12,6 @@ trait RemovableTrait
      */
     private $is_removed = false;
 
-    /**
-     * @return bool
-     */
     public function isRemoved(): bool
     {
         return $this->is_removed;

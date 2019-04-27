@@ -12,9 +12,6 @@ trait PublishableTrait
      */
     private $is_published = true;
 
-    /**
-     * @return bool
-     */
     public function isPublished(): bool
     {
         return $this->is_published;
