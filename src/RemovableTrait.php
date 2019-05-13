@@ -10,20 +10,20 @@ trait RemovableTrait
      * @ORM\Column(type="boolean")
      * @var bool
      */
-    private $is_removed = false;
+    private $isRemoved = false;
 
     public function isRemoved(): bool
     {
-        return $this->is_removed;
+        return $this->isRemoved;
     }
 
     public function remove(): void
     {
-        $this->is_removed = true;
+        $this->isRemoved = true;
     }
 
     public function restore(): void
     {
-        $this->is_removed = false;
+        $this->isRemoved = false;
     }
 }

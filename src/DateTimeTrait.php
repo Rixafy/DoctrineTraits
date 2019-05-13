@@ -12,32 +12,32 @@ trait DateTimeTrait
      * @ORM\Column(type="datetime")
      * @var DateTime
      */
-    private $created_at;
+    private $createdAt;
 
     /**
      * @ORM\Column(type="datetime")
      * @var DateTime
      */
-    private $updated_at;
+    private $updatedAt;
 
     public function getCreatedAt(): ?DateTime
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
-    public function setCreatedAt(DateTime $created_at): void
+    public function setCreatedAt(DateTime $createdAt): void
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $createdAt;
     }
 
     public function getUpdatedAt(): ?DateTime
     {
-        return $this->updated_at;
+        return $this->updatedAt;
     }
 
-    public function setUpdatedAt(DateTime $updated_at): void
+    public function setUpdatedAt(DateTime $updatedAt): void
     {
-        $this->updated_at = $updated_at;
+        $this->updatedAt = $updatedAt;
     }
 
     /**
@@ -46,10 +46,10 @@ trait DateTimeTrait
      */
     public function timestampUpdate()
     {
-        $this->updated_at = new DateTime();
+        $this->updatedAt = new DateTime();
 
-        if ($this->created_at === null) {
-            $this->created_at = new DateTime();
+        if ($this->createdAt === null) {
+            $this->createdAt = new DateTime();
         }
     }
 }

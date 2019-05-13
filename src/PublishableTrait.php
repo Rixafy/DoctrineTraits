@@ -10,20 +10,20 @@ trait PublishableTrait
      * @ORM\Column(type="boolean")
      * @var bool
      */
-    private $is_published = true;
+    private $isPublished = true;
 
     public function isPublished(): bool
     {
-        return $this->is_published;
+        return $this->isPublished;
     }
 
     public function publish(): void
     {
-        $this->is_published = true;
+        $this->isPublished = true;
     }
 
     public function hide(): void
     {
-        $this->is_published = false;
+        $this->isPublished = false;
     }
 }

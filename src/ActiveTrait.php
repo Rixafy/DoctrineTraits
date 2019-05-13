@@ -10,25 +10,25 @@ trait ActiveTrait
      * @ORM\Column(type="boolean")
      * @var bool
      */
-    private $is_active = true;
+    private $isActive = true;
 
     public function isActive(): bool
     {
-        return $this->is_active;
+        return $this->isActive;
     }
 
-    public function setIsActive(bool $is_active): void
+    public function setIsActive(bool $isActive): void
     {
-        $this->is_active = $is_active;
+        $this->isActive = $isActive;
     }
 
     public function disable(): void
 	{
-		$this->is_active = false;
+		$this->isActive = false;
 	}
 
     public function enable(): void
 	{
-		$this->is_active = true;
+		$this->isActive = true;
 	}
 }
