@@ -9,8 +9,8 @@
             "email": "rixafy@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
+    "minimum-stability": "stable",
+    "require-dev": {
         "ramsey/uuid-doctrine": "dev-master"
     },
     "autoload": {
