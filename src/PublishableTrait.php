@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Rixafy\DoctrineTraits;
 
+use Doctrine\ORM\Mapping as ORM;
+
 trait PublishableTrait
 {
-    /**
-     * @ORM\Column(type="boolean")
-     * @var bool
-     */
-    private $isPublished = true;
+	#[ORM\Column]
+    private bool $isPublished = true;
 
     public function isPublished(): bool
     {

@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Rixafy\DoctrineTraits;
 
+use Doctrine\ORM\Mapping as ORM;
+
 trait RemovableTrait
 {
-    /**
-     * @ORM\Column(type="boolean")
-     * @var bool
-     */
-    private $isRemoved = false;
+	#[ORM\Column]
+    private bool $isRemoved = false;
 
     public function isRemoved(): bool
     {

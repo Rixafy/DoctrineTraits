@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Rixafy\DoctrineTraits;
 
+use Doctrine\ORM\Mapping as ORM;
+
 trait SortOrderTrait
 {
-    /**
-     * @ORM\Column(type="integer")
-     * @var int
-     */
-    private $sortOrder = 0;
+	#[ORM\Column]
+    private int $sortOrder = 0;
 
     public function getSortOrder(): int
     {

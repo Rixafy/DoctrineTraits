@@ -4,19 +4,15 @@ declare(strict_types=1);
 
 namespace Rixafy\DoctrineTraits;
 
+use Doctrine\ORM\Mapping as ORM;
+
 trait LocationTrait
 {
-    /**
-     * @ORM\Column(type="float")
-     * @var float
-     */
-    private $latitude = 0;
+	#[ORM\Column]
+    private float $latitude = 0;
 
-    /**
-     * @ORM\Column(type="float")
-     * @var float
-     */
-    private $longitude = 0;
+	#[ORM\Column]
+    private float $longitude = 0;
 
     public function getLatitude(): float
     {

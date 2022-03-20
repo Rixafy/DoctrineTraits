@@ -5,20 +5,15 @@ declare(strict_types=1);
 namespace Rixafy\DoctrineTraits;
 
 use DateTime;
+use Doctrine\ORM\Mapping as ORM;
 
 trait DateTimeTrait
 {
-    /**
-     * @ORM\Column(type="datetime")
-     * @var DateTime
-     */
-    private $createdAt;
+	#[ORM\Column(nullable: false)]
+    private ?DateTime $createdAt = null;
 
-    /**
-     * @ORM\Column(type="datetime")
-     * @var DateTime
-     */
-    private $updatedAt;
+	#[ORM\Column]
+    private DateTime $updatedAt;
 
     public function getCreatedAt(): ?DateTime
     {
