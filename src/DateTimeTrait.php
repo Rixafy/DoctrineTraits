@@ -34,11 +34,9 @@ trait DateTimeTrait
     {
         $this->updatedAt = $updatedAt;
     }
-
-    /**
-     * @ORM\PrePersist
-     * @ORM\PreUpdate
-     */
+	
+	#[ORM\PrePersist]
+	#[ORM\PreUpdate]
     public function timestampUpdate()
     {
         $this->updatedAt = new DateTime();
