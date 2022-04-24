@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
+namespace Rixafy\DoctrineTraits;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Id\AbstractIdGenerator;
 use Doctrine\ORM\Mapping\Entity;
+use Exception;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
 use Symfony\Component\Uid\Ulid;

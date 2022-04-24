@@ -7,7 +7,6 @@ namespace Rixafy\DoctrineTraits;
 use Doctrine\ORM\Mapping as ORM;
 
 use Ramsey\Uuid\UuidInterface;
-use UlidGenerator;
 
 trait UniqueUlidTrait
 {
