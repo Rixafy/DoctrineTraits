@@ -10,19 +10,14 @@
         }
     ],
     "minimum-stability": "stable",
-    "require-dev": {
+    "require": {
         "ramsey/uuid-doctrine": ">=1.6",
         "doctrine/orm": ">=2.0",
-        "symfony/uid": "^6.0"
+        "rixafy/sdk": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "Rixafy\\DoctrineTraits\\": "src"
-        }
-    },
-    "config": {
-        "platform": {
-            "php": "7.1"
         }
     }
 }

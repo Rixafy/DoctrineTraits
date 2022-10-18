@@ -11,9 +11,9 @@ use Ramsey\Uuid\UuidInterface;
 trait UniqueUlidTrait
 {
 	#[ORM\Id]
-	#[ORM\Column(type: 'uuid_binary', unique: true)]
+	#[ORM\Column(type: 'uuid', unique: true)]
 	#[ORM\GeneratedValue(strategy: 'CUSTOM')]
-	#[ORM\CustomIdGenerator(class: UlidGenerator::class)]
+	#[ORM\CustomIdGenerator(class: IdGenerator::class)]
 	protected UuidInterface $id;
 
 	public function getId(): UuidInterface
